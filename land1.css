@@ -1,0 +1,187 @@
+/* Global Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+	background-color: #000000;
+	color: #fff;
+	padding: 20px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Hero Section Styles */
+#hero {
+	background-image: url('robotics_hero.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 100px;
+	text-align: center;
+}
+
+#hero h1 {
+	font-size: 36px;
+}
+
+#hero p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.btn {
+	background-color: #333;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+/* Other Sections Styles */
+section {
+	padding: 50px;
+}
+
+section h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+section li {
+	margin-bottom: 10px;
+}
+
+.divisions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+.division {
+	flex-basis: calc(33.33% - 20px);
+	margin-bottom: 40px;
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.division:last-child {
+	margin-bottom: 0;
+}
+
+.content {
+	padding: 20px;
+}
+
+.content h3 {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+.content p {
+	margin-bottom: 0;
+}
+
+.content img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Footer Styles */
+/* footer {
+	background-image: url('LAMBORGHINI VISION GRAN TOURISMO.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	
+}
+footer .site-footer-top {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 100px;
+}
+footer .site-footer-bottom {
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+} */
+footer {
+    position: relative; /* To make the pseudo-element positioning relative to footer */
+    background-image: url('LAMBORGHINI VISION GRAN TOURISMO.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* To prevent overflow issues */
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Full semi-transparent overlay */
+    z-index: 0; /* Place the overlay behind the content */
+}
+
+footer .site-footer-top,
+footer .site-footer-bottom {
+    position: relative; /* Make the content appear above the overlay */
+    z-index: 1;
+    padding: 20px;
+}
+
+footer h2, 
+footer p, 
+footer a, 
+footer span, 
+footer .footer-copyright {
+    color: #fff;
+}
+
+
+.social-icons {
+	margin-top: 20px;
+}
+
+.social-icons a {
+	color: #fff;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.social-icons i {
+	font-size: 24px;
+	vertical-align: middle;
+}
+.text{
+float: right;	
+}
